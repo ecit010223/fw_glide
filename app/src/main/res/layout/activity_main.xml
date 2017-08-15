@@ -10,33 +10,83 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"/>
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_simple"
-            style="@style/TextStyle"
-            android:layout_weight="1.0"
-            android:text="简单使用"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_cancel"
-            style="@style/TextStyle"
-            android:layout_weight="1.0"
-            android:text="取消"/>
+            <Button
+                android:id="@+id/btn_simple"
+                style="@style/TextStyle"
+                android:text="简单使用"/>
 
-        <Button
-            android:id="@+id/btn_GlideApp"
-            style="@style/TextStyle"
-            android:layout_weight="1.0"
-            android:text="使用GlideApp"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/TextStyle"
+                android:text="取消"/>
 
-        <Button
-            android:id="@+id/btn_GlideApp"
-            style="@style/TextStyle"
-            android:layout_weight="1.0"
-            android:text="使用GlideApp"/>
-    </GridLayout>
+            <Button
+                android:id="@+id/btn_GlideApp"
+                style="@style/TextStyle"
+                android:text="使用GlideApp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_custom_glide"
+                style="@style/TextStyle"
+                android:text="自定义Glide"/>
+
+            <Button
+                android:id="@+id/btn_gif_glide"
+                style="@style/TextStyle"
+                android:text="自定义GIF"/>
+
+            <Button
+                android:id="@+id/btn_placeholder"
+                style="@style/TextStyle"
+                android:text="点位符的使用"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_RequestOptions"
+                style="@style/TextStyle"
+                android:text="RequestOptions"/>
+
+            <Button
+                android:id="@+id/btn_TransitionOptions"
+                style="@style/TextStyle"
+                android:text="TransitionOptions"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_RequestBuilder"
+                style="@style/TextStyle"
+                android:text="RequestBuilder"/>
+
+            <Button
+                android:id="@+id/btn_Transformations"
+                style="@style/TextStyle"
+                android:text="Transformations"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
